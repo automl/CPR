@@ -1,7 +1,7 @@
 import inspect
 
-from pytorch_cpr.optim_cpr import CPR
-from pytorch_cpr.group_parameter import cpr_group_named_parameters
+from .optim_cpr import CPR
+from .group_parameter import cpr_group_named_parameters
 
 
 def apply_CPR(model, optimizer_cls, kappa_init_param, kappa_init_method='warm_start', reg_function='l2',
